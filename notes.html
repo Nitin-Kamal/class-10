@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sono">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+</head>
+<style>
+    .indicator {
+        width: 50px;
+    }
+</style>
+<body onload="loadup()" id="body">
+  <div class="navbar">
+    <nav id=navbar class="navbar">
+      <div class="navbaritem home">
+        <a class="navbaritem" href="index.html">Home</a>
+      </div>
+      <div class="notes navbaritem">
+        <a href="notes.html" class="navbaritem active">Notes</a><br>
+        <img src="indicator.jpg" class="indicator">
+      </div>
+      <div class="navbaritem textbooks">
+        <a href="textbooks.html" class="navbaritem">Textbooks</a>
+      </div>
+      <div class="navbaritem students">
+        <a href="students.html" class="navbaritem">Students</a>
+      </div>
+    </nav>
+    <nav id=navbar1 class="navbar1">
+      <p>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+                <br>
+          <a class="active" href="notes.html">Notes</a>
+                <br>
+          <a href="textbooks.html">Textbooks</a>
+                <br>
+          <a href="students.html">Student list</a>
+                <br>
+        </div>
+        <span style="font-size: 30px; cursor: pointer" onclick="openNav()"><img class="menuopener" src="menu-outline.jpg"/></span>
+      </p>
+    </nav>
+  </div>
+</body>
+<script src="scripts.js"></script>
+</html>
