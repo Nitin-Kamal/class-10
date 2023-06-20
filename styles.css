@@ -148,3 +148,42 @@ body {
     display: none;
     position: relative;
 }
+.text_selection {
+  background-color: aquamarine;
+  width: 850px;
+  height: 600px;
+  margin-top: 5%;
+  margin-left: 20%;
+  border-radius: 20px;
+}
+.text_select {
+  margin-left: 40px;
+  width: 770px;
+  margin-top: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+.text_select1 {
+  margin-left: 40px;
+  width: 770px;
+  margin-top: 80px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+}
+.text_select2 {
+  margin-left: 40px;
+  width: 770px;
+  margin-top: 80px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+}
+.text_select3 {
+  margin-left: 40px;
+  width: 770px;
+  margin-top: 80px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+}
