@@ -187,3 +187,52 @@ body {
   border-radius: 10px;
   display: none;
 }
+.ch_select1 {
+  margin-left: 40px;
+  width: 770px;
+  margin-top: 80px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+  margin-bottom: 200px;
+}
+.ch_select2 {
+  margin-left: 40px;
+  width: 770px;
+  margin-top: 80px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+  margin-bottom: 200px;
+}
+.download_text {
+  margin-left: 650px;
+  width: 150px;
+  height: 40px;
+  background-color: red;
+  border-radius: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+}
+.download_text:hover {
+  background-color: orange;
+}
+.ch_select3 {
+  margin-left: 40px;
+  width: 770px;
+  margin-top: 80px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+  margin-bottom: 200px;
+}
+.ch_select4 {
+  margin-left: 40px;
+  width: 770px;
+  margin-top: 80px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+  margin-bottom: 200px;
+}
