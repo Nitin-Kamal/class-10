@@ -53,6 +53,7 @@
     </div>
     
     <div class="text_selection">
+        <h2 class="info">Subject:</h2>
         <select class="text_select" onchange="get_sub_value()" name="text_select" id="text_select">
             <option value="SELECT">Select</option>
             <option value="ENGLISH">English</option>
@@ -117,18 +118,42 @@
             <option value="WHOLEBOOK">Whole Book</option>
         </select>
         <select name="ch_select4" id="ch_select4" class="ch_select4" onchange="get_ch_value('ch_select4', 'tamil/')">
+            <option value="BOOK">Whole Book</option>
+        </select>
+        <select name="ch_select5" id="ch_select5" class="ch_select5" onchange="get_ch_value('ch_select5', 'social/history/')">
+            <option value="CH1">Chapter 1</option>
+            <option value="CH2">Chapter 2</option>
+            <option value="CH3">Chapter 3</option>
+            <option value="CH4">Chapter 4</option>
+            <option value="CH5">Chapter 5</option>
+            <option value="WHOLEBOOK">Wholebook</option>
+        </select>
+        <select name="ch_select6" id="ch_select6" class="ch_select6" onchange="get_ch_value('ch_select6', 'social/civics/')">
+            <option value="CH1">Chapter 1</option>
+            <option value="CH2">Chapter 2</option>
+            <option value="CH3">Chapter 3</option>
+            <option value="CH4">Chapter 4</option>
+            <option value="CH5">Chapter 5</option>
+            <option value="WHOLEBOOK">Wholebook</option>
+        </select>
+        <select name="ch_select7" id="ch_select7" class="ch_select7" onchange="get_ch_value('ch_select7', 'social/geo/')">
             <option value="CH1">Chapter 1</option>
             <option value="CH2">Chapter 2</option>
             <option value="CH3">Chapter 3</option>
             <option value="CH4">Chapter 4</option>
             <option value="CH5">Chapter 5</option>
             <option value="CH6">Chapter 6</option>
-            <option value="CH7">Chapter 7</option>
-            <option value="CH8">Chapter 8</option>
-            <option value="CH9">Chapter 9</option>
-            <option value="WHOLEBOOK">Whole Book</option>
+            <option value="WHOLEBOOK">Wholebook</option>
+        </select>
+        <select name="ch_select8" id="ch_select8" class="ch_select8" onchange="get_ch_value('ch_select8', 'social/eco/')">
+            <option value="CH1">Chapter 1</option>
+            <option value="CH2">Chapter 2</option>
+            <option value="CH3">Chapter 3</option>
+            <option value="CH4">Chapter 4</option>
+            <option value="WHOLEBOOK">Wholebook</option>
+        </select>
         <a href="" id="download_text" download>
-            <button type="button" class="download_text">Download</button>
+            <button type="button" class="download_text" id="download_text">Download</button>
         </a>
     </div>
 </body>

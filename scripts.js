@@ -63,12 +63,82 @@ function get_book_value(select_book) {
     if (book == 'BEEHIVE') {
         document.getElementById('ch_select1').style.display = 'initial';
         document.getElementById('ch_select2').style.display = 'none';
-        document.getElementById('ch_select3').style.display = 'none';
-    } else {
+        document.getElementById('ch_select3').style.display = 'none'
+        document.getElementById('ch_select4').style.display = 'none'
+        document.getElementById('ch_select5').style.display = 'none'
+        document.getElementById('ch_select6').style.display = 'none'
+        document.getElementById('ch_select7').style.display = 'none'
+        document.getElementById('ch_select8').style.display = 'none'
+        document.getElementById('ch_select9').style.display = 'none'
+        document.getElementById('ch_select10').style.display = 'none'
+        document.getElementById('ch_select11').style.display = 'none'
+    }
+    if (book == 'MOMENTS') {
         document.getElementById('ch_select2').style.display = 'initial';
         document.getElementById('ch_select1').style.display = 'none';
         document.getElementById('ch_select3').style.display = 'none';
+        document.getElementById('ch_select4').style.display = 'none'
+        document.getElementById('ch_select5').style.display = 'none'
+        document.getElementById('ch_select6').style.display = 'none'
+        document.getElementById('ch_select7').style.display = 'none'
+        document.getElementById('ch_select8').style.display = 'none'
+        document.getElementById('ch_select9').style.display = 'none'
+        document.getElementById('ch_select10').style.display = 'none'
+        document.getElementById('ch_select11').style.display = 'none'
     }
+    if (book == 'HISTORY') {
+        document.getElementById('ch_select1').style.display = 'none'
+        document.getElementById('ch_select2').style.display = 'none'
+        document.getElementById('ch_select3').style.display = 'none'
+        document.getElementById('ch_select4').style.display = 'none'
+        document.getElementById('ch_select5').style.display = 'inital'
+        document.getElementById('ch_select6').style.display = 'none'
+        document.getElementById('ch_select7').style.display = 'none'
+        document.getElementById('ch_select8').style.display = 'none'
+        document.getElementById('ch_select9').style.display = 'none'
+        document.getElementById('ch_select10').style.display = 'none'
+        document.getElementById('ch_select11').style.display = 'none'
+    }
+    if (book == 'CIVICS') {
+        document.getElementById('ch_select1').style.display = 'none'
+        document.getElementById('ch_select2').style.display = 'none'
+        document.getElementById('ch_select3').style.display = 'none'
+        document.getElementById('ch_select4').style.display = 'none'
+        document.getElementById('ch_select5').style.display = 'none'
+        document.getElementById('ch_select6').style.display = 'initial'
+        document.getElementById('ch_select7').style.display = 'none'
+        document.getElementById('ch_select8').style.display = 'none'
+        document.getElementById('ch_select9').style.display = 'none'
+        document.getElementById('ch_select10').style.display = 'none'
+        document.getElementById('ch_select11').style.display = 'none'
+    }
+    if (book == 'GEOGRAPHY') {
+        document.getElementById('ch_select1').style.display = 'none'
+        document.getElementById('ch_select2').style.display = 'none'
+        document.getElementById('ch_select3').style.display = 'none'
+        document.getElementById('ch_select4').style.display = 'none'
+        document.getElementById('ch_select5').style.display = 'none'
+        document.getElementById('ch_select6').style.display = 'none'
+        document.getElementById('ch_select7').style.display = 'initial'
+        document.getElementById('ch_select8').style.display = 'none'
+        document.getElementById('ch_select9').style.display = 'none'
+        document.getElementById('ch_select10').style.display = 'none'
+        document.getElementById('ch_select11').style.display = 'none'
+    }
+    if (book == 'ECONOMICS') {
+        document.getElementById('ch_select1').style.display = 'none'
+        document.getElementById('ch_select2').style.display = 'none'
+        document.getElementById('ch_select3').style.display = 'none'
+        document.getElementById('ch_select4').style.display = 'none'
+        document.getElementById('ch_select5').style.display = 'none'
+        document.getElementById('ch_select6').style.display = 'none'
+        document.getElementById('ch_select7').style.display = 'none'
+        document.getElementById('ch_select8').style.display = 'initial'
+        document.getElementById('ch_select9').style.display = 'none'
+        document.getElementById('ch_select10').style.display = 'none'
+        document.getElementById('ch_select11').style.display = 'none'
+    }
+
 }
 function get_ch_value(select_ch, select_path) {
     let chapter = document.getElementById(select_ch).value;
@@ -111,5 +181,8 @@ function get_ch_value(select_ch, select_path) {
     }
     if (chapter == 'ANSWERS') {
         download_button.setAttribute("href", select_path + 'Answers.pdf');
+    }
+    if (chapter == 'BOOK') {
+        download_button.setAttribute("href", select_path + 'tamil_textbook.pdf')
     }
 }
