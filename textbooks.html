@@ -13,7 +13,7 @@
         width: 95px;
     }
 </style>
-<body onload="loadup()" id="body">
+<body onload="loadup()" id="body" class="text_body">
     <div class="navbar">
         <nav id=navbar class="navbar">
             <div class="navbaritem home">
@@ -51,7 +51,7 @@
             </p>
         </nav>
     </div>
-    
+    <h3>You're accessing textbooks.</h3>
     <div class="text_selection">
         <h2 class="info">Subject:</h2><br>
         <select class="text_select" onchange="get_sub_value()" name="text_select" id="text_select">
@@ -152,10 +152,28 @@
             <option value="CH4">Chapter 4</option>
             <option value="WHOLEBOOK">Wholebook</option>
         </select>
+        <select name="ch_select9" id="ch_select9" class="ch_select9" onchange="get_ch_value('ch_select9', 'Science/Bio/')">
+            <option value="CH1">Chapter 1</option>
+            <option value="CH2">Chapter 2</option>
+        </select>
+        <select name="ch_select10" id="ch_select10" class="ch_select10" onchange="get_ch_value('ch_select10', 'Science/Chem/')">
+            <option value="CH1">Chapter 1</option>
+            <option value="CH2">Chapter 2</option>
+            <option value="CH3">Chapter 3</option>
+            <option value="CH4">Chapter 4</option>
+        </select>
+        <select name="ch_select11" id="ch_select11" class="ch_select11" onchange="get_ch_value('ch_select11', 'Science/Phy/')">
+            <option value="CH1">Chapter 1</option>
+            <option value="CH2">Chapter 2</option>
+            <option value="CH3">Chapter 3</option>
+            <option value="CH4">Chapter 4</option>
+            <option value="WHOLEBOOK">Wholebook</option>
+        </select>
         <a href="" id="download_text" download>
             <button type="button" class="download_text" id="download_text">Download</button>
         </a>
     </div>
 </body>
-<script src="scripts.js"></script>
+<script src="scripts.js">
+</script>
 </html>

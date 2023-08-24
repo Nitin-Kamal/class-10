@@ -29,7 +29,6 @@ body {
     color: goldenrod;
 }
 .indicator {
-    width: 40px;
     height: 3px;
     position: absolute;
     margin-top: 1px;
@@ -288,6 +287,101 @@ body {
   display: none;
 }
 .ch_select11 {
+  margin-left: 40px;
+  width: 80%;
+  margin-top: 80px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+}
+.noteselect {
+  background-color: yellow;
+  width: 70%;
+  height: 600px;
+  margin-top: 5%;
+  margin-left: 17%;
+  border-radius: 20px;
+}
+.sub_select {
+  margin-left: 40px;
+  width: 80%;
+  margin-top: 20px;
+  height: 40px;
+  border-radius: 10px;
+}
+.sub_select1 {
+  margin-left: 40px;
+  width: 80%;
+  margin-top: 80px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+}
+.sub_select2 {
+  margin-left: 40px;
+  width: 80%;
+  margin-top: 80px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+}
+.sub_select3 {
+  margin-left: 40px;
+  width: 80%;
+  margin-top: 80px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+}
+.ch_select_notes1 {
+  margin-left: 40px;
+  width: 80%;
+  margin-top: 80px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+}
+.ch_select_notes2 {
+  margin-left: 40px;
+  width: 80%;
+  margin-top: 80px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+}
+.ch_select_notes3 {
+  margin-left: 40px;
+  width: 80%;
+  margin-top: 80px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+}
+.ch_select_notes4 {
+  margin-left: 40px;
+  width: 80%;
+  margin-top: 80px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+}
+.ch_select_notes5 {
+  margin-left: 40px;
+  width: 80%;
+  margin-top: 80px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+}
+.ch_select_notes6 {
+  margin-left: 40px;
+  width: 80%;
+  margin-top: 80px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+}
+.ch_select_notes7 {
   margin-left: 40px;
   width: 80%;
   margin-top: 80px;
