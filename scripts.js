@@ -4,7 +4,6 @@ function loadup() {
 }
 setInterval(() => {
     let width_of_window = window.innerWidth;
-    console.log(width_of_window);
     if (width_of_window < 518) {
         let d = document.getElementById('navbar');
         d.style.display = 'none';
