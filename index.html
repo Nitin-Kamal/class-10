@@ -1,79 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="google-site-verification" content="zM5CnWrrJDGBvGXXdbhc8NY_ZbsQpcAoa79hKDfO0-w" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sono"/>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
-  </head>
-  <style>
-    .indicator {
-      width: 40px;
-    }
-  </style>
-  <body onload="loadup()" id="body">
-    <div class="navbar">
-      <nav id=navbar class="navbar">
-          <div class="navbaritem home">
-              <a class="navbaritem active" href="index.html">Home</a><br>
-              <img src="indicator.jpg" class="indicator">
-          </div>
-          <div class="notes navbaritem">
-              <a href="notes.html" class="navbaritem">Notes</a>
-          </div>
-          <div class="navbaritem textbooks">
-              <a href="textbooks.html" class="navbaritem">Textbooks</a><br>
-          </div>
-          <div class="navbaritem students">
-              <a href="students.html" class="navbaritem">Students</a>
-          </div>
-      </nav>
-      <nav id=navbar1 class="navbar1">
-          <p>
-            <div id="mySidenav" class="sidenav">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-                >&times;</a
-              >
-              <a class="active" href="index.html">Home</a>
-              <br>
-              <a href="notes.html">Notes</a>
-              <br>
-              <a href="textbooks.html">Textbooks</a>
-              <br>
-              <a href="students.html">Student list</a>
-              <br>
-            </div>
-            <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
-              ><img class="menuopener" src="menu-outline.jpg"
-            /></span>
-          </p>
-      </nav>
-  </div>
-      <h1 style="text-align: center; margin-top: 20px;">Welcome to class-9 educational website</h1>
-    <div class="notesabout">
-      <h1 class="aboutnotes">
-        Check out the Notes<br />section to access <a href="notes.html">Notes</a>
-      </h1>
-      <div class="accnotes">
-        <a href="notes.html"><button class="subhome" type="button" id="enghome">English</button></a>
-        <a href="notes.html"><button class="subhome" type="button" id="enghome">Maths</button></a>
-        <a href="notes.html"><button class="subhome arrow" type="button" id="enghome"><img class="arrow_to_notes" src="arrow-forward-outline (1).svg" alt=""><br>Click to access more Notes</button></a>
+
+<head>
+  <meta name="google-site-verification" content="zM5CnWrrJDGBvGXXdbhc8NY_ZbsQpcAoa79hKDfO0-w" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sono" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homepage</title>
+</head>
+<style>
+  .indicator {
+    width: 40px;
+  }
+</style>
+
+<body onload="loadup()" id="body">
+  <div class="navbar">
+    <nav id=navbar class="navbar">
+      <div class="navbaritem home">
+        <a class="navbaritem active" href="index.html">Home</a><br>
+        <img src="indicator.jpg" class="indicator">
       </div>
+      <div class="notes navbaritem">
+        <a href="notes.html" class="navbaritem">Notes</a>
+      </div>
+      <div class="navbaritem textbooks">
+        <a href="textbooks.html" class="navbaritem">Textbooks</a><br>
+      </div>
+      <div class="navbaritem students">
+        <a href="students.html" class="navbaritem">Students</a>
+      </div>
+    </nav>
+    <nav id=navbar1 class="navbar1">
+      <p>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="active" href="index.html">Home</a>
+        <br>
+        <a href="notes.html">Notes</a>
+        <br>
+        <a href="textbooks.html">Textbooks</a>
+        <br>
+        <a href="students.html">Student list</a>
+        <br>
+      </div>
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"><img class="menuopener"
+          src="menu-outline.jpg" /></span>
+      </p>
+    </nav>
+  </div>
+  <h1 style="text-align: center; margin-top: 20px;">Welcome to class-9 educational website</h1>
+  <div class="notesabout">
+    <h1 class="aboutnotes">
+      Check out the Notes<br />section to access <a href="notes.html">Notes</a>
+    </h1>
+    <div class="accnotes">
+      <a href="notes.html"><button class="subhome" type="button" id="enghome">English</button></a>
+      <a href="notes.html"><button class="subhome" type="button" id="enghome">Maths</button></a>
+      <a href="notes.html"><button class="subhome arrow" type="button" id="enghome"><img class="arrow_to_notes"
+            src="arrow-forward-outline (1).svg" alt=""><br>Click to access more Notes</button></a>
     </div>
-    <div class="notesabout">
-        <h1 class="aboutnotes">
-            Check out the Textbooks<br>section to access <a href="textbooks.html">Textbooks</a>
-        </h1>
-        <div class="accnotes">
-            <a href="textbooks.html"><button class="subhome" type="button" id="enghome">English</button></a>
-            <a href="textbooks.html"><button class="subhome" type="button" id="enghome">Maths</button></a>
-            <a href="textbooks.html"><button class="subhome arrow" type="button" id="enghome"><img class="arrow_to_notes" src="arrow-forward-outline (1).svg" alt=""><br>Click to access more Textbooks</button></a>
-        </div>
+  </div>
+  <div class="notesabout">
+    <h1 class="aboutnotes">
+      Check out the Textbooks<br>section to access <a href="textbooks.html">Textbooks</a>
+    </h1>
+    <div class="accnotes">
+      <a href="textbooks.html"><button class="subhome" type="button" id="enghome">English</button></a>
+      <a href="textbooks.html"><button class="subhome" type="button" id="enghome">Maths</button></a>
+      <a href="textbooks.html"><button class="subhome arrow" type="button" id="enghome"><img class="arrow_to_notes"
+            src="arrow-forward-outline (1).svg" alt=""><br>Click to access more Textbooks</button></a>
     </div>
-  </body>
-  <script src="scripts.js"></script>
+  </div>
+</body>
+<script src="scripts.js"></script>
+
 </html>
