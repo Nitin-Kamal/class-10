@@ -294,6 +294,14 @@ body {
   border-radius: 10px;
   display: none;
 }
+.ch_select12 {
+  margin-left: 40px;
+  width: 80%;
+  margin-top: 80px;
+  height: 40px;
+  border-radius: 10px;
+  display: none;
+}
 .noteselect {
   background-color: yellow;
   width: 70%;

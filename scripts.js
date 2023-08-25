@@ -55,6 +55,7 @@ function get_sub_value() {
         document.getElementById('text_select2').style.display = 'none';
         document.getElementById('text_select1').style.display = 'none';
         document.getElementById('text_select3').style.display = 'none';
+        document.getElementById('ch_select12').style.display = 'initial';
     }
 }
 function get_book_value(select_book) {
@@ -71,6 +72,7 @@ function get_book_value(select_book) {
         document.getElementById('ch_select9').style.display = 'none';
         document.getElementById('ch_select10').style.display = 'none';
         document.getElementById('ch_select11').style.display = 'none';
+        document.getElementById('ch_select12').style.display = 'none';
     }
     if (book == 'MOMENTS') {
         document.getElementById('ch_select2').style.display = 'initial';
@@ -84,6 +86,7 @@ function get_book_value(select_book) {
         document.getElementById('ch_select9').style.display = 'none';
         document.getElementById('ch_select10').style.display = 'none';
         document.getElementById('ch_select11').style.display = 'none';
+        document.getElementById('ch_select12').style.display = 'none';
     }
     if (book == 'HISTORY') {
         document.getElementById('ch_select1').style.display = 'none';
@@ -97,6 +100,7 @@ function get_book_value(select_book) {
         document.getElementById('ch_select9').style.display = 'none';
         document.getElementById('ch_select10').style.display = 'none';
         document.getElementById('ch_select11').style.display = 'none';
+        document.getElementById('ch_select12').style.display = 'none';
     }
     if (book == 'CIVICS') {
         document.getElementById('ch_select1').style.display = 'none';
@@ -110,6 +114,7 @@ function get_book_value(select_book) {
         document.getElementById('ch_select9').style.display = 'none';
         document.getElementById('ch_select10').style.display = 'none';
         document.getElementById('ch_select11').style.display = 'none';
+        document.getElementById('ch_select12').style.display = 'none';
     }
     if (book == 'GEOGRAPHY') {
         document.getElementById('ch_select1').style.display = 'none';
@@ -123,6 +128,7 @@ function get_book_value(select_book) {
         document.getElementById('ch_select9').style.display = 'none';
         document.getElementById('ch_select10').style.display = 'none';
         document.getElementById('ch_select11').style.display = 'none';
+        document.getElementById('ch_select12').style.display = 'none';
     }
     if (book == 'ECONOMICS') {
         document.getElementById('ch_select1').style.display = 'none';
@@ -136,6 +142,7 @@ function get_book_value(select_book) {
         document.getElementById('ch_select9').style.display = 'none';
         document.getElementById('ch_select10').style.display = 'none';
         document.getElementById('ch_select11').style.display = 'none';
+        document.getElementById('ch_select12').style.display = 'none';
     }
     if (book == 'BIOLOGY') {
         document.getElementById('ch_select1').style.display = 'none';
@@ -149,6 +156,7 @@ function get_book_value(select_book) {
         document.getElementById('ch_select9').style.display = 'initial';
         document.getElementById('ch_select10').style.display = 'none';
         document.getElementById('ch_select11').style.display = 'none';
+        document.getElementById('ch_select12').style.display = 'none';
     }
     if (book == 'CHEMISTRY') {
         document.getElementById('ch_select1').style.display = 'none';
@@ -162,6 +170,7 @@ function get_book_value(select_book) {
         document.getElementById('ch_select9').style.display = 'none';
         document.getElementById('ch_select10').style.display = 'initial';
         document.getElementById('ch_select11').style.display = 'none';
+        document.getElementById('ch_select12').style.display = 'none';
     }
     if (book == 'PHYSICS') {
         document.getElementById('ch_select1').style.display = 'none';
@@ -175,6 +184,7 @@ function get_book_value(select_book) {
         document.getElementById('ch_select9').style.display = 'none';
         document.getElementById('ch_select10').style.display = 'none';
         document.getElementById('ch_select11').style.display = 'initial';
+        document.getElementById('ch_select12').style.display = 'none';
     }
 }
 function get_ch_value(select_ch, select_path) {
@@ -220,7 +230,7 @@ function get_ch_value(select_ch, select_path) {
         download_button.setAttribute("href", select_path + 'Answers.pdf');
     }
     if (chapter == 'BOOK') {
-        download_button.setAttribute("href", select_path + 'tamil_textbook.pdf');
+        download_button.setAttribute("href", select_path + 'textbook.pdf');
     }
 }
 function get_sub_value1() {
