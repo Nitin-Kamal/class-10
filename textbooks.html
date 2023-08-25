@@ -1,191 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sono">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Textbooks</title>
-</head>
-<style>
+  </head>
+  <style>
     .indicator {
-        width: 95px;
+      width: 95px;
     }
-</style>
-<body onload="loadup()" id="body" class="text_body">
+  </style>
+  <body onload="loadup()" id="body" class="text_body">
     <div class="navbar">
-        <nav id=navbar class="navbar">
-            <div class="navbaritem home">
-                <a class="navbaritem" href="index.html">Home</a>
-            </div>
-            <div class="notes navbaritem">
-                <a href="notes.html" class="navbaritem">Notes</a>
-            </div>
-            <div class="navbaritem textbooks">
-                <a href="textbooks.html" class="navbaritem active">Textbooks</a><br>
-                <img src="indicator.jpg" class="indicator">
-            </div>
-            <div class="navbaritem students">
-                <a href="students.html" class="navbaritem">Students</a>
-            </div>
-        </nav>
-        <nav id=navbar1 class="navbar1">
-            <p>
-              <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-                  >&times;</a
-                >
-                <a href="index.html">Home</a>
-                <br>
-                <a href="notes.html">Notes</a>
-                <br>
-                <a class="active" href="textbooks.html">Textbooks</a>
-                <br>
-                <a href="students.html">Student list</a>
-                <br>
-              </div>
-              <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
-                ><img class="menuopener" src="menu-outline.jpg"
-              /></span>
-            </p>
-        </nav>
+      <nav id=navbar class="navbar">
+        <div class="navbaritem home">
+          <a class="navbaritem" href="index.html">Home</a>
+        </div>
+        <div class="notes navbaritem">
+          <a href="notes.html" class="navbaritem">Notes</a>
+        </div>
+        <div class="navbaritem textbooks">
+          <a href="textbooks.html" class="navbaritem active">Textbooks</a>
+          <br>
+          <img src="indicator.jpg" class="indicator">
+        </div>
+        <div class="navbaritem students">
+          <a href="students.html" class="navbaritem">Students</a>
+        </div>
+      </nav>
+      <nav id=navbar1 class="navbar1">
+        <p>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <br>
+          <a href="notes.html">Notes</a>
+          <br>
+          <a class="active" href="textbooks.html">Textbooks</a>
+          <br>
+          <a href="students.html">Student list</a>
+          <br>
+        </div>
+        <span style="font-size: 30px; cursor: pointer" onclick="openNav()">
+          <img class="menuopener" src="menu-outline.jpg" />
+        </span>
+        </p>
+      </nav>
     </div>
     <h3>You're accessing textbooks.</h3>
     <div class="text_selection">
-        <h2 class="info">Subject:</h2><br>
-        <select class="text_select" onchange="get_sub_value()" name="text_select" id="text_select">
-            <option value="SELECT">Select</option>
-            <option value="ENGLISH">English</option>
-            <option value="MATHS">Maths</option>
-            <option value="SCIENCE">Science</option>
-            <option value="SOCIAL">Social Science</option>
-            <option value="TAMIL">Tamil</option>
-        </select>
-        <select name="text_select1" id="text_select1" class="text_select1" onchange="get_book_value('text_select1')">
-            <option value="BEEHIVE">Beehive</option>
-            <option value="MOMENTS">Moments</option>
-        </select>
-        <select name="text_select2" id="text_select2" class="text_select2" onchange="get_book_value('text_select2')">
-            <option value="BIOLOGY">Biology</option>
-            <option value="CHEMISTRY">Chemistry</option>
-            <option value="PHYSICS">Physics</option>
-        </select>
-        <select name="text_select3" id="text_select3" class="text_select3" onchange="get_book_value('text_select3')">
-            <option value="HISTORY">History</option>
-            <option value="CIVICS">Civics</option>
-            <option value="GEOGRAPHY">Geography</option>
-            <option value="ECONOMICS">Economics</option>
-        </select>
-        <select name="ch_select1" id="ch_select1" class="ch_select1" onchange="get_ch_value('ch_select1', 'english_textbook/beehive/')">
-            <option value="CH1">Chapter 1</option>
-            <option value="CH2">Chapter 2</option>
-            <option value="CH3">Chapter 3</option>
-            <option value="CH4">Chapter 4</option>
-            <option value="CH5">Chapter 5</option>
-            <option value="CH6">Chapter 6</option>
-            <option value="CH7">Chapter 7</option>
-            <option value="CH8">Chapter 8</option>
-            <option value="CH9">Chapter 9</option>
-            <option value="WHOLEBOOK">Whole Book</option>
-        </select>
-        <select name="ch_select2" id="ch_select2" class="ch_select2" onchange="get_ch_value('ch_select2', 'english_textbook/moments/')">
-            <option value="CH1">Chapter 1</option>
-            <option value="CH2">Chapter 2</option>
-            <option value="CH3">Chapter 3</option>
-            <option value="CH4">Chapter 4</option>
-            <option value="CH5">Chapter 5</option>
-            <option value="CH6">Chapter 6</option>
-            <option value="CH7">Chapter 7</option>
-            <option value="CH8">Chapter 8</option>
-            <option value="CH9">Chapter 9</option>
-            <option value="WHOLEBOOK">Whole Book</option>
-        </select>
-        <select name="ch_select3" id="ch_select3" class="ch_select3" onchange="get_ch_value('ch_select3', 'maths/')">
-            <option value="CH1">Chapter 1</option>
-            <option value="CH2">Chapter 2</option>
-            <option value="CH3">Chapter 3</option>
-            <option value="CH4">Chapter 4</option>
-            <option value="CH5">Chapter 5</option>
-            <option value="CH6">Chapter 6</option>
-            <option value="CH7">Chapter 7</option>
-            <option value="CH8">Chapter 8</option>
-            <option value="CH9">Chapter 9</option>
-            <option value="CH10">Chapter 10</option>
-            <option value="CH11">Chapter 11</option>
-            <option value="CH12">Chapter 12</option>
-            <option value="ANSWERS">Answers</option>
-            <option value="WHOLEBOOK">Whole Book</option>
-        </select>
-        <select name="ch_select4" id="ch_select4" class="ch_select4" onchange="get_ch_value('ch_select4', 'tamil/')">
-            <option value="BOOK">Whole Book</option>
-        </select>
-        <select name="ch_select5" id="ch_select5" class="ch_select5" onchange="get_ch_value('ch_select5', 'social/history/')">
-            <option value="CH1">Chapter 1</option>
-            <option value="CH2">Chapter 2</option>
-            <option value="CH3">Chapter 3</option>
-            <option value="CH4">Chapter 4</option>
-            <option value="CH5">Chapter 5</option>
-            <option value="WHOLEBOOK">Wholebook</option>
-        </select>
-        <select name="ch_select6" id="ch_select6" class="ch_select6" onchange="get_ch_value('ch_select6', 'social/civics/')">
-            <option value="CH1">Chapter 1</option>
-            <option value="CH2">Chapter 2</option>
-            <option value="CH3">Chapter 3</option>
-            <option value="CH4">Chapter 4</option>
-            <option value="CH5">Chapter 5</option>
-            <option value="WHOLEBOOK">Wholebook</option>
-        </select>
-        <select name="ch_select7" id="ch_select7" class="ch_select7" onchange="get_ch_value('ch_select7', 'social/geo/')">
-            <option value="CH1">Chapter 1</option>
-            <option value="CH2">Chapter 2</option>
-            <option value="CH3">Chapter 3</option>
-            <option value="CH4">Chapter 4</option>
-            <option value="CH5">Chapter 5</option>
-            <option value="CH6">Chapter 6</option>
-            <option value="WHOLEBOOK">Wholebook</option>
-        </select>
-        <select name="ch_select8" id="ch_select8" class="ch_select8" onchange="get_ch_value('ch_select8', 'social/eco/')">
-            <option value="CH1">Chapter 1</option>
-            <option value="CH2">Chapter 2</option>
-            <option value="CH3">Chapter 3</option>
-            <option value="CH4">Chapter 4</option>
-            <option value="WHOLEBOOK">Wholebook</option>
-        </select>
-        <select name="ch_select9" id="ch_select9" class="ch_select9" onchange="get_ch_value('ch_select9', 'Science/Bio/')">
-            <option value="CH1">Chapter 1</option>
-            <option value="CH2">Chapter 2</option>
-        </select>
-        <select name="ch_select10" id="ch_select10" class="ch_select10" onchange="get_ch_value('ch_select10', 'Science/Chem/')">
-            <option value="CH1">Chapter 1</option>
-            <option value="CH2">Chapter 2</option>
-            <option value="CH3">Chapter 3</option>
-            <option value="CH4">Chapter 4</option>
-        </select>
-        <select name="ch_select11" id="ch_select11" class="ch_select11" onchange="get_ch_value('ch_select11', 'Science/Phy/')">
-            <option value="CH1">Chapter 1</option>
-            <option value="CH2">Chapter 2</option>
-            <option value="CH3">Chapter 3</option>
-            <option value="CH4">Chapter 4</option>
-            <option value="WHOLEBOOK">Wholebook</option>
-        </select>
-        <select name="ch_select12" id="ch_select12" class="ch_select12" onchange="get_ch_value('ch_select12', 'tamil/')">
-            <option value="CH1">இயல் 1</option>
-            <option value="CH2">இயல் 2</option>
-            <option value="CH3">இயல் 3</option>
-            <option value="CH4">இயல் 4</option>
-            <option value="CH5">இயல் 5</option>
-            <option value="CH6">இயல் 6</option>
-            <option value="CH7">இயல் 7</option>
-            <option value="CH8">இயல் 8</option>
-            <option value="CH9">இயல் 9</option>
-            <option value="WHOLEBOOK">Wholebook</option>
-        </select>
-        <a href="" id="download_text" download>
-            <button type="button" class="download_text" id="download_text">Download</button>
-        </a>
+      <h2 class="info">Subject:</h2>
+      <br>
+      <select class="text_select" onchange="get_sub_value()" name="text_select" id="text_select">
+        <option value="SELECT">Select</option>
+        <option value="ENGLISH">English</option>
+        <option value="MATHS">Maths</option>
+        <option value="SCIENCE">Science</option>
+        <option value="SOCIAL">Social Science</option>
+        <option value="TAMIL">Tamil</option>
+      </select>
+      <select name="text_select1" id="text_select1" class="text_select1" onchange="get_book_value('text_select1')">
+        <option value="BEEHIVE">Beehive</option>
+        <option value="MOMENTS">Moments</option>
+      </select>
+      <select name="text_select2" id="text_select2" class="text_select2" onchange="get_book_value('text_select2')">
+        <option value="BIOLOGY">Biology</option>
+        <option value="CHEMISTRY">Chemistry</option>
+        <option value="PHYSICS">Physics</option>
+      </select>
+      <select name="text_select3" id="text_select3" class="text_select3" onchange="get_book_value('text_select3')">
+        <option value="HISTORY">History</option>
+        <option value="CIVICS">Civics</option>
+        <option value="GEOGRAPHY">Geography</option>
+        <option value="ECONOMICS">Economics</option>
+      </select>
+      <select name="ch_select1" id="ch_select1" class="ch_select1" onchange="get_ch_value('ch_select1', 'english_textbook/beehive/')">
+        <option value="CH1">Chapter 1</option>
+        <option value="CH2">Chapter 2</option>
+        <option value="CH3">Chapter 3</option>
+        <option value="CH4">Chapter 4</option>
+        <option value="CH5">Chapter 5</option>
+        <option value="CH6">Chapter 6</option>
+        <option value="CH7">Chapter 7</option>
+        <option value="CH8">Chapter 8</option>
+        <option value="CH9">Chapter 9</option>
+        <option value="WHOLEBOOK">Whole Book</option>
+      </select>
+      <select name="ch_select2" id="ch_select2" class="ch_select2" onchange="get_ch_value('ch_select2', 'english_textbook/moments/')">
+        <option value="CH1">Chapter 1</option>
+        <option value="CH2">Chapter 2</option>
+        <option value="CH3">Chapter 3</option>
+        <option value="CH4">Chapter 4</option>
+        <option value="CH5">Chapter 5</option>
+        <option value="CH6">Chapter 6</option>
+        <option value="CH7">Chapter 7</option>
+        <option value="CH8">Chapter 8</option>
+        <option value="CH9">Chapter 9</option>
+        <option value="WHOLEBOOK">Whole Book</option>
+      </select>
+      <select name="ch_select3" id="ch_select3" class="ch_select3" onchange="get_ch_value('ch_select3', 'maths/')">
+        <option value="CH1">Chapter 1</option>
+        <option value="CH2">Chapter 2</option>
+        <option value="CH3">Chapter 3</option>
+        <option value="CH4">Chapter 4</option>
+        <option value="CH5">Chapter 5</option>
+        <option value="CH6">Chapter 6</option>
+        <option value="CH7">Chapter 7</option>
+        <option value="CH8">Chapter 8</option>
+        <option value="CH9">Chapter 9</option>
+        <option value="CH10">Chapter 10</option>
+        <option value="CH11">Chapter 11</option>
+        <option value="CH12">Chapter 12</option>
+        <option value="ANSWERS">Answers</option>
+        <option value="WHOLEBOOK">Whole Book</option>
+      </select>
+      <select name="ch_select4" id="ch_select4" class="ch_select4" onchange="get_ch_value('ch_select4', 'tamil/')">
+        <option value="BOOK">Whole Book</option>
+      </select>
+      <select name="ch_select5" id="ch_select5" class="ch_select5" onchange="get_ch_value('ch_select5', 'social/history/')">
+        <option value="CH1">Chapter 1</option>
+        <option value="CH2">Chapter 2</option>
+        <option value="CH3">Chapter 3</option>
+        <option value="CH4">Chapter 4</option>
+        <option value="CH5">Chapter 5</option>
+        <option value="WHOLEBOOK">Wholebook</option>
+      </select>
+      <select name="ch_select6" id="ch_select6" class="ch_select6" onchange="get_ch_value('ch_select6', 'social/civics/')">
+        <option value="CH1">Chapter 1</option>
+        <option value="CH2">Chapter 2</option>
+        <option value="CH3">Chapter 3</option>
+        <option value="CH4">Chapter 4</option>
+        <option value="CH5">Chapter 5</option>
+        <option value="WHOLEBOOK">Wholebook</option>
+      </select>
+      <select name="ch_select7" id="ch_select7" class="ch_select7" onchange="get_ch_value('ch_select7', 'social/geo/')">
+        <option value="CH1">Chapter 1</option>
+        <option value="CH2">Chapter 2</option>
+        <option value="CH3">Chapter 3</option>
+        <option value="CH4">Chapter 4</option>
+        <option value="CH5">Chapter 5</option>
+        <option value="CH6">Chapter 6</option>
+        <option value="WHOLEBOOK">Wholebook</option>
+      </select>
+      <select name="ch_select8" id="ch_select8" class="ch_select8" onchange="get_ch_value('ch_select8', 'social/eco/')">
+        <option value="CH1">Chapter 1</option>
+        <option value="CH2">Chapter 2</option>
+        <option value="CH3">Chapter 3</option>
+        <option value="CH4">Chapter 4</option>
+        <option value="WHOLEBOOK">Wholebook</option>
+      </select>
+      <select name="ch_select9" id="ch_select9" class="ch_select9" onchange="get_ch_value('ch_select9', 'Science/Bio/')">
+        <option value="CH1">Chapter 1</option>
+        <option value="CH2">Chapter 2</option>
+      </select>
+      <select name="ch_select10" id="ch_select10" class="ch_select10" onchange="get_ch_value('ch_select10', 'Science/Chem/')">
+        <option value="CH1">Chapter 1</option>
+        <option value="CH2">Chapter 2</option>
+        <option value="CH3">Chapter 3</option>
+        <option value="CH4">Chapter 4</option>
+      </select>
+      <select name="ch_select11" id="ch_select11" class="ch_select11" onchange="get_ch_value('ch_select11', 'Science/Phy/')">
+        <option value="CH1">Chapter 1</option>
+        <option value="CH2">Chapter 2</option>
+        <option value="CH3">Chapter 3</option>
+        <option value="CH4">Chapter 4</option>
+        <option value="WHOLEBOOK">Wholebook</option>
+      </select>
+      <select name="ch_select12" id="ch_select12" class="ch_select12" onchange="get_ch_value('ch_select12', 'tamil/')">
+        <option value="CH1">இயல் 1</option>
+        <option value="CH2">இயல் 2</option>
+        <option value="CH3">இயல் 3</option>
+        <option value="CH4">இயல் 4</option>
+        <option value="CH5">இயல் 5</option>
+        <option value="CH6">இயல் 6</option>
+        <option value="CH7">இயல் 7</option>
+        <option value="CH8">இயல் 8</option>
+        <option value="CH9">இயல் 9</option>
+        <option value="WHOLEBOOK">Wholebook</option>
+      </select>
+      <a href="" id="download_text" download>
+        <button type="button" class="download_text" id="download_text">Download</button>
+      </a>
     </div>
-</body>
-<script src="scripts.js">
-</script>
+  </body>
+  <script src="scripts.js"></script>
 </html>
